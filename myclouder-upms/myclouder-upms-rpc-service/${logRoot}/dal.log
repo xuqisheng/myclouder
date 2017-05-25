@@ -1,0 +1,50 @@
+2017-05-25 14:53:33.697 DEBUG [main][ClassPathScanningCandidateComponentProvider.java:294] - Identified candidate component class: file [I:\workspace\personal\workspace\myclouder\myclouder-upms\myclouder-upms-rpc-dal\target\classes\com\myclouder\upms\dal\mapper\UpmsLogMapper.class]
+2017-05-25 14:53:33.697 DEBUG [main][ClassPathMapperScanner.java:180] - Creating MapperFactoryBean with name 'upmsLogMapper' and 'com.myclouder.upms.dal.mapper.UpmsLogMapper' mapperInterface
+2017-05-25 14:53:34.845 DEBUG [main][SqlSessionFactoryBean.java:497] - Parsed configuration file: 'class path resource [mybatis/mybatis-config.xml]'
+2017-05-25 14:53:34.919 DEBUG [main][SqlSessionFactoryBean.java:529] - Parsed mapper file: 'file [I:\workspace\personal\workspace\myclouder\myclouder-upms\myclouder-upms-rpc-dal\target\classes\mybatis\mapping\UpmsLogMapper.xml]'
+2017-05-25 14:53:35.224 DEBUG [main][SqlSessionUtils.java:97] - Creating a new SqlSession
+2017-05-25 14:53:35.238 DEBUG [main][SqlSessionUtils.java:148] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1601e47] was not registered for synchronization because synchronization is not active
+2017-05-25 14:53:35.340 DEBUG [main][SpringManagedTransaction.java:87] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3d3f761a] will not be managed by Spring
+2017-05-25 14:53:35.369 DEBUG [main][BaseJdbcLogger.java:181] - ==>  Preparing: SELECT count(0) FROM upms_log 
+2017-05-25 14:53:35.401 DEBUG [main][BaseJdbcLogger.java:181] - ==> Parameters: 
+2017-05-25 14:53:35.427 DEBUG [main][BaseJdbcLogger.java:181] - <==      Total: 1
+2017-05-25 14:53:35.428 DEBUG [main][BaseJdbcLogger.java:181] - ==>  Preparing: SELECT id,type,description,create_by,gmt_create,spend_time,remote_addr,user_agent,request_uri,method FROM upms_log LIMIT 10 
+2017-05-25 14:53:35.429 DEBUG [main][BaseJdbcLogger.java:181] - ==> Parameters: 
+2017-05-25 14:53:35.434 DEBUG [main][BaseJdbcLogger.java:181] - <==      Total: 2
+2017-05-25 14:53:35.435 DEBUG [main][SqlSessionUtils.java:191] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1601e47]
+2017-05-25 14:59:41.265 DEBUG [main][ClassPathScanningCandidateComponentProvider.java:294] - Identified candidate component class: file [I:\workspace\personal\workspace\myclouder\myclouder-upms\myclouder-upms-rpc-dal\target\classes\com\myclouder\upms\dal\mapper\UpmsLogMapper.class]
+2017-05-25 14:59:41.265 DEBUG [main][ClassPathMapperScanner.java:180] - Creating MapperFactoryBean with name 'upmsLogMapper' and 'com.myclouder.upms.dal.mapper.UpmsLogMapper' mapperInterface
+2017-05-25 14:59:42.596 DEBUG [main][SqlSessionFactoryBean.java:497] - Parsed configuration file: 'class path resource [mybatis/mybatis-config.xml]'
+2017-05-25 14:59:42.651 DEBUG [main][SqlSessionFactoryBean.java:529] - Parsed mapper file: 'file [I:\workspace\personal\workspace\myclouder\myclouder-upms\myclouder-upms-rpc-dal\target\classes\mybatis\mapping\UpmsLogMapper.xml]'
+2017-05-25 14:59:42.973 DEBUG [main][SqlSessionUtils.java:97] - Creating a new SqlSession
+2017-05-25 14:59:42.985 DEBUG [main][SqlSessionUtils.java:148] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44c79f32] was not registered for synchronization because synchronization is not active
+2017-05-25 14:59:43.052 DEBUG [main][SpringManagedTransaction.java:87] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71104a4] will not be managed by Spring
+2017-05-25 14:59:43.056 DEBUG [main][BaseJdbcLogger.java:181] - ==>  Preparing: SELECT count(0) FROM upms_log 
+2017-05-25 14:59:43.082 DEBUG [main][BaseJdbcLogger.java:181] - ==> Parameters: 
+2017-05-25 14:59:43.176 DEBUG [main][BaseJdbcLogger.java:181] - <==      Total: 1
+2017-05-25 14:59:43.177 DEBUG [main][BaseJdbcLogger.java:181] - ==>  Preparing: SELECT id,type,description,create_by,gmt_create,spend_time,remote_addr,user_agent,request_uri,method FROM upms_log LIMIT 10 
+2017-05-25 14:59:43.178 DEBUG [main][BaseJdbcLogger.java:181] - ==> Parameters: 
+2017-05-25 14:59:43.182 DEBUG [main][BaseJdbcLogger.java:181] - <==      Total: 2
+2017-05-25 14:59:43.182 DEBUG [main][SqlSessionUtils.java:191] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44c79f32]
+2017-05-25 15:03:26.177 DEBUG [main][ClassPathScanningCandidateComponentProvider.java:294] - Identified candidate component class: file [I:\workspace\personal\workspace\myclouder\myclouder-upms\myclouder-upms-rpc-dal\target\classes\com\myclouder\upms\dal\mapper\UpmsLogMapper.class]
+2017-05-25 15:03:26.177 DEBUG [main][ClassPathMapperScanner.java:180] - Creating MapperFactoryBean with name 'upmsLogMapper' and 'com.myclouder.upms.dal.mapper.UpmsLogMapper' mapperInterface
+2017-05-25 15:03:27.284 DEBUG [main][SqlSessionFactoryBean.java:497] - Parsed configuration file: 'class path resource [mybatis/mybatis-config.xml]'
+2017-05-25 15:03:27.369 DEBUG [main][SqlSessionFactoryBean.java:529] - Parsed mapper file: 'file [I:\workspace\personal\workspace\myclouder\myclouder-upms\myclouder-upms-rpc-dal\target\classes\mybatis\mapping\UpmsLogMapper.xml]'
+2017-05-25 15:03:27.651 DEBUG [main][SqlSessionUtils.java:97] - Creating a new SqlSession
+2017-05-25 15:03:27.662 DEBUG [main][SqlSessionUtils.java:148] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a1edad4] was not registered for synchronization because synchronization is not active
+2017-05-25 15:03:27.677 DEBUG [main][SpringManagedTransaction.java:87] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5d465e4b] will not be managed by Spring
+2017-05-25 15:03:27.681 DEBUG [main][BaseJdbcLogger.java:181] - ==>  Preparing: SELECT id,type,description,create_by,gmt_create,spend_time,remote_addr,user_agent,request_uri,method FROM upms_log WHERE id = ? 
+2017-05-25 15:03:27.719 DEBUG [main][BaseJdbcLogger.java:181] - ==> Parameters: 1(String)
+2017-05-25 15:03:27.740 DEBUG [main][BaseJdbcLogger.java:181] - <==      Total: 1
+2017-05-25 15:03:27.741 DEBUG [main][SqlSessionUtils.java:191] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a1edad4]
+2017-05-25 15:07:47.862 DEBUG [main][ClassPathScanningCandidateComponentProvider.java:294] - Identified candidate component class: file [I:\workspace\personal\workspace\myclouder\myclouder-upms\myclouder-upms-rpc-dal\target\classes\com\myclouder\upms\dal\mapper\UpmsLogMapper.class]
+2017-05-25 15:07:47.863 DEBUG [main][ClassPathMapperScanner.java:180] - Creating MapperFactoryBean with name 'upmsLogMapper' and 'com.myclouder.upms.dal.mapper.UpmsLogMapper' mapperInterface
+2017-05-25 15:07:48.909 DEBUG [main][SqlSessionFactoryBean.java:497] - Parsed configuration file: 'class path resource [mybatis/mybatis-config.xml]'
+2017-05-25 15:07:48.985 DEBUG [main][SqlSessionFactoryBean.java:529] - Parsed mapper file: 'file [I:\workspace\personal\workspace\myclouder\myclouder-upms\myclouder-upms-rpc-dal\target\classes\mybatis\mapping\UpmsLogMapper.xml]'
+2017-05-25 15:07:49.296 DEBUG [main][SqlSessionUtils.java:97] - Creating a new SqlSession
+2017-05-25 15:07:49.306 DEBUG [main][SqlSessionUtils.java:148] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a1edad4] was not registered for synchronization because synchronization is not active
+2017-05-25 15:07:49.322 DEBUG [main][SpringManagedTransaction.java:87] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5d465e4b] will not be managed by Spring
+2017-05-25 15:07:49.328 DEBUG [main][BaseJdbcLogger.java:181] - ==>  Preparing: SELECT id,type,description,create_by,gmt_create,spend_time,remote_addr,user_agent,request_uri,method FROM upms_log WHERE id = ? 
+2017-05-25 15:07:49.359 DEBUG [main][BaseJdbcLogger.java:181] - ==> Parameters: 1(String)
+2017-05-25 15:07:49.395 DEBUG [main][BaseJdbcLogger.java:181] - <==      Total: 1
+2017-05-25 15:07:49.397 DEBUG [main][SqlSessionUtils.java:191] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a1edad4]

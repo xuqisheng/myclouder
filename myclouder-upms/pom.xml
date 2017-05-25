@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.myclouder</groupId>
+    <artifactId>myclouder-upms</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+        <myclouder-common-version>1.0.0</myclouder-common-version>
+        <shardingjdbc.version>1.4.1</shardingjdbc.version>
+        <pagehelper-version>5.0.1</pagehelper-version>
+
+        <junit-version>4.12</junit-version>
+    </properties>
+
+    <modules>
+        <module>myclouder-upms-server</module>
+        <module>myclouder-upms-client</module>
+        <module>myclouder-upms-rpc-api</module>
+        <module>myclouder-upms-rpc-service</module>
+        <module>myclouder-upms-rpc-dal</module>
+        <module>myclouder-upms-rpc-common</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper-version}</version>
+            </dependency>
+            <!--测试-->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit-version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.myclouder</groupId>
+                <artifactId>myclouder-common</artifactId>
+                <version>${myclouder-common-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myclouder</groupId>
+                <artifactId>myclouder-upms-rpc-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myclouder</groupId>
+                <artifactId>myclouder-upms-rpc-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myclouder</groupId>
+                <artifactId>myclouder-upms-rpc-dal</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myclouder</groupId>
+                <artifactId>myclouder-upms-rpc-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myclouder</groupId>
+                <artifactId>myclouder-upms-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- sharding-jdbc -->
+            <dependency>
+            <groupId>com.dangdang</groupId>
+            <artifactId>sharding-jdbc-core</artifactId>
+            <version>${shardingjdbc.version}</version>
+            </dependency>
+            <dependency>
+            <groupId>com.dangdang</groupId>
+            <artifactId>sharding-jdbc-transaction</artifactId>
+            <version>${shardingjdbc.version}</version>
+            </dependency>
+            <dependency>
+            <groupId>com.dangdang</groupId>
+            <artifactId>sharding-jdbc-config-yaml</artifactId>
+            <version>${shardingjdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.dangdang</groupId>
+                <artifactId>sharding-jdbc-config-spring</artifactId>
+                <version>${shardingjdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.dangdang</groupId>
+                <artifactId>sharding-jdbc-self-id-generator</artifactId>
+                <version>${shardingjdbc.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>

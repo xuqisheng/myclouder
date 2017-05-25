@@ -1,0 +1,5 @@
+2017-05-25 14:53:35.506 INFO [main][UpmsLogServiceTest.java:38] - 测试log4j2~~~~~~~~~~~~~~~~~~~~~~~~~
+2017-05-25 14:59:43.242 INFO [main][UpmsLogServiceTest.java:38] - 测试log4j2~~~~~~~~~~~~~~~~~~~~~~~~~
+2017-05-25 15:03:27.807 INFO [main][UpmsLogServiceTest.java:31] - 测试log4j2~~~~~~~~~~~~~~~~~~~~~~~~~
+2017-05-25 15:07:49.287 INFO [main][UpmsLogServiceImpl.java:30] - UpmsLogService queryUpmsLogById~~~~~~~~~~~~~~~~~~~
+2017-05-25 15:07:49.456 INFO [main][UpmsLogServiceTest.java:31] - 测试log4j2~~~~~~~~~~~~~~~~~~~~~~~~~
