@@ -10,6 +10,6 @@
     <!-- ApplicationContext -->
     <!--<bean id="springContextUtil" class="com.zheng.common.util.SpringContextUtil"></bean>-->
     <context:component-scan base-package="com.myclouder.upms.rpc.service"/>
-    <import resource="classpath*:spring_mybatis.xml"/>
+    <import resource="classpath*:/spring/spring_mybatis.xml"/>
 
 </beans>

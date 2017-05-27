@@ -21,6 +21,107 @@
             <groupId>com.myclouder</groupId>
             <artifactId>myclouder-upms-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.myclouder</groupId>
+            <artifactId>myclouder-common</artifactId>
+        </dependency>
     </dependencies>
 
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev</env>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <env>test</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env>prod</env>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <finalName>myclouder-upms-service</finalName>
+        <filters>
+            <filter>src/main/resources/profiles/${env}.properties</filter>
+        </filters>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <!-- 是否过滤属性，默认fasle;作用：使用properties中的属性值覆盖文件中的变量 -->
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>**/profiles/*</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+                <excludes>
+                    <exclude>**/profiles/*</exclude>
+                </excludes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<artifactId>maven-assembly-plugin</artifactId>-->
+                <!--<version>2.6</version>-->
+                <!--<configuration>-->
+                    <!--<descriptor>src/main/assembly/assembly.xml</descriptor>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>make-assembly</id>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>single</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    </build>
+
+    <repositories>
+        <repository>
+            <id>motherbuy</id>
+            <url>http://nexus.motherbuy.com/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>motherbuy</id>
+            <name>motherbuy releases</name>
+            <url>http://nexus.motherbuy.com/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>motherbuy</id>
+            <name>motherbuy snapshots</name>
+            <url>http://nexus.motherbuy.com/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>

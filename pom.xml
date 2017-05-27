@@ -26,5 +26,6 @@
         <module>myclouder-uc</module>
         <module>myclouder-cms</module>
         <module>myclouder-api</module>
+        <module>myclouder-alice</module>
     </modules>
 </project>
