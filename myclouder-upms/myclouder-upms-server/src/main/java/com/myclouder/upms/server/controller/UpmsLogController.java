@@ -1,5 +1,6 @@
 package com.myclouder.upms.server.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.myclouder.common.model.Result;
 import com.myclouder.upms.rpc.api.UpmsLogService;
 import com.myclouder.upms.rpc.dto.UpmsLogDTO;
@@ -29,7 +30,9 @@ public class UpmsLogController {
     @ResponseBody
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public Result index() {
-        UpmsLogDTO upmsLogDTO = upmsLogService.queryUpmsLogById("1");
-        return Result.success(upmsLogDTO);
+//        UpmsLogDTO upmsLogDTO = upmsLogService.queryUpmsLogById("1");
+//        return Result.success(upmsLogDTO);
+        PageInfo<UpmsLogDTO> upmsLogDTOPageInfo = upmsLogService.queryUpmsLogs();
+        return Result.success(upmsLogDTOPageInfo);
     }
 }
