@@ -27,5 +27,7 @@
         <module>myclouder-cms</module>
         <module>myclouder-api</module>
         <module>myclouder-alice</module>
+        <module>myclouder-search</module>
+        <module>myclouder-mapper</module>
     </modules>
 </project>
